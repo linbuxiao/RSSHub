@@ -369,3 +369,9 @@ count 的取值范围为 1-12，为防止请求次数过多，推荐设置为 5 
 ### 主页
 
 <Route author="kt286" example="/zreading" path="/zreading" />
+
+## 知网
+
+### 期刊
+
+<Route author="linbuxiao" example="/cnki/navi/LNZY" path="/cnki/navi/:id" :paramsDesc="['期刊 id']" />

@@ -1,4 +1,7 @@
 {
+    "/8world/:category?": [
+        "nczitzk"
+    ],
     "/aamacau/aamacau/:category?/:id?": [
         "nczitzk"
     ],
@@ -19,6 +22,9 @@
     ],
     "/furstar/archive/:lang?": [
         "NeverBehave"
+    ],
+    "/icac/news/:lang?": [
+        "linbuxiao, TonyRL"
     ],
     "/test/:id": [
         "DIYgod",

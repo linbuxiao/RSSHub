@@ -2807,6 +2807,9 @@
     "/nmbxd1/:id": [
         "miles170"
     ],
+    "/nmtv/column/:id?": [
+        "nczitzk"
+    ],
     "/nodejs/blog/:language?": [
         "nczitzk"
     ],
@@ -3374,7 +3377,7 @@
     "/scmp/:category_id": [
         "proletarius101"
     ],
-    "/sctv/programme/:id?": [
+    "/sctv/programme/:id?/:limit?/:isFull?": [
         "nczitzk"
     ],
     "/scvtc/xygg": [

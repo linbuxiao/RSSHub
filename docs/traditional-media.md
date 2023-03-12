@@ -1362,19 +1362,9 @@ category 对应的关键词有
 
 ### 学习时报
 
-<Route author="nczitzk" example="/cntheory/paper" path="/cntheory/paper/:id?" :paramsDesc="['编号，见下表，默认为全部']">
+<Route author="nczitzk" example="/cntheory/paper" path="/cntheory/paper/:id?" :paramsDesc="['板块，默认为全部']">
 
-| 版           | 编号 |
-| ----------- | -- |
-| 全部          |    |
-| 第 A1 版：国内大局 | A1 |
-| 第 A2 版：市场经济 | A2 |
-| 第 A3 版：民主法治 | A3 |
-| 第 A4 版：读书治学 | A4 |
-| 第 A5 版：特别策划 | A5 |
-| 第 A6 版：科技前沿 | A6 |
-| 第 A7 版：社会治理 | A7 |
-| 第 A8 版：学员天地 | A8 |
+如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。
 
 </Route>
 
@@ -2578,5 +2568,17 @@ category 对应的关键词有
 `https://www.rfa.org/cantonese/news` 对应 `/rfa/cantonese/news`
 
 `https://www.rfa.org/cantonese/news/htm` 对应 `/rfa/cantonese/news/htm`
+
+</Route>
+
+## 组织人事报
+
+### 电子报
+
+<Route author="5upernove-heng" example="/zuzhirenshi" path="/zuzhirenshi/:id?" :paramsDesc="['报纸版号，默认为全部']" radar="1">
+
+| 第一版 要闻 | 第二版 要闻 | 第三版 人才 | 第四版 人社工作 | 第五版 基层党建 | 第六版 理论评论 | 第七版 史事通鉴 | 第八版 关注 |
+| ------ | ------ | ------ | -------- | -------- | -------- | -------- | ------ |
+| 1      | 2      | 3      | 4        | 5        | 6        | 7        | 8      |
 
 </Route>

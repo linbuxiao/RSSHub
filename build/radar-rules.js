@@ -6677,6 +6677,17 @@
         source:[ "/blog",
           "/" ],
         target:"/macfilos/blog" } ] },
+  "magazinelib.com":{ _name:"magazineLib",
+    ".":[ { title:"Latest Magazine",
+        docs:"https://docs.rsshub.app/reading.html#magazinelib",
+        source:[ "/" ],
+        target:(_, url) => {
+                    const query = new URL(url).searchParams.get('s');
+                    if (query === null) {
+                        return '/magazinelib/latest-magazine';
+                    }
+                    return `/magazinelib/latest-magazine/${query}`;
+                } } ] },
   "mangadex.org":{ _name:"MangaDex",
     ".":[ { title:"漫画更新",
         docs:"https://docs.rsshub.app/anime.html#mangadex",
@@ -8628,6 +8639,11 @@
         source:[ "/news.php",
           "/" ],
         target:"/qbittorrent/news" } ] },
+  "qianp.com":{ _name:"千篇网",
+    ".":[ { title:"知识库／资讯",
+        docs:"https://docs.rsshub.app/new-media.html#qian-pian-wang",
+        source:[ "/*path" ],
+        target:(params) => (!params.path.endsWith('.html') ? `/qianp/news/${params.path}` : null) } ] },
   "qianzhan.com":{ _name:"前瞻网",
     ".":[ { title:"文章列表",
         docs:"https://docs.rsshub.app/finance.html#qian-zhan-wang",
@@ -10732,6 +10748,15 @@
         docs:"https://docs.rsshub.app/blog.html#v1tx",
         source:[ "/" ],
         target:"/v1tx" } ] },
+  "vcb-s.com":{ _name:"VCB-Studio",
+    ".":[ { title:"最新文章",
+        docs:"https://docs.rsshub.app/anime.html#vcb-studio",
+        source:[ "/" ],
+        target:"/vcb-s" },
+      { title:"分类文章",
+        docs:"https://docs.rsshub.app/anime.html#vcb-studio",
+        source:[ "/archives/category/:cate" ],
+        target:"/vcb-s/category/:cate" } ] },
   "baden-wuerttemberg.de":{ _name:"Constitutional Court of Baden-Württemberg (Germany)",
     verfgh:[ { title:"Press releases",
         docs:"https://docs.rsshub.app/en/government.html#constitutional-court-of-baden-wurttemberg-germany",
@@ -11580,6 +11605,14 @@
         docs:"https://docs.rsshub.app/game.html#you-yan-she",
         source:"/docs",
         target:"/yystv/docs" } ] },
+  "zagg.com":{ _name:"New Arrivals",
+    ".":[ { title:"Zagg - New Arrivals",
+        docs:"https://docs.rsshub.app/shopping.html#zagg",
+        source:[ "/en_us/new-arrivals" ],
+        target:(_, url) => {
+                    const queryString = url.split('?')[1];
+                    return `/zagg/new-arrivals/${queryString}`;
+                } } ] },
   "myzaker.com":{ _name:"ZAKER",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/new-media.html#zaker",
@@ -11946,6 +11979,11 @@
         source:[ "/student5/chickenM/articles/:board",
           "/student5/chickenM/articles" ],
         target:(params) => `/zuvio/student5${params.board ? `/${params.board}` : ''}` } ] },
+  "zuzhirenshi.com":{ _name:"组织人事报",
+    ".":[ { title:"日报",
+        docs:"https://docs.rsshub.app/traditional-media.html#zu-zhi-ren-shi-bao",
+        source:[ "/dianzibao/*" ],
+        target:"/zuzhirenshi" } ] },
   "zyshow.net":{ _name:"综艺秀",
     ".":[ { title:"综艺",
         docs:"https://docs.rsshub.app/multimedia.html#zong-yi-xiu-zong-yi",

@@ -2064,7 +2064,10 @@
     "/gov/shenzhen/zzb/:caty/:page?": [
         "zlasd"
     ],
-    "/gov/sichuan/deyang/govpulicinfo/:countyName": [
+    "/gov/sichuan/deyang/govpublicinfo/:countyName/:infoType?": [
+        "zytomorrow"
+    ],
+    "/gov/sichuan/deyang/mztoday/:infoType?": [
         "zytomorrow"
     ],
     "/gov/taiyuan/rsj/:caty/:page?": [
@@ -2439,6 +2442,9 @@
     "/ieee/journal/:journal/recent/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
+    ],
+    "/ieee/journal/:journal/earlyaccess/:sortType?": [
+        "5upernova-heng"
     ],
     "/ieee-security/security-privacy": [
         "ZeddYu"
@@ -4227,6 +4233,9 @@
     "/sensortower/blog/:language?": [
         "nczitzk"
     ],
+    "/setn/:category?": [
+        "nczitzk"
+    ],
     "/shiep/:type/:id?": [
         "gumibea",
         "TeamSUEP"
@@ -4334,6 +4343,12 @@
     ],
     "/soundofhope/:channel/:id": [
         "Fatpandac"
+    ],
+    "/southcn/nfapp/column/:column?": [
+        "TimWu007"
+    ],
+    "/southcn/nfapp/reporter/:reporter": [
+        "TimWu007"
     ],
     "/spotify/artist/:id": [
         "outloudvi"
